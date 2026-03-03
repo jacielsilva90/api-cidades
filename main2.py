@@ -7,13 +7,16 @@ app=FastAPI()
 class Cidade(BaseModel):
     id:int
     nome:str
-    
+
+
 cidades_list = [
   {'id': 1, 'nome': 'Teresina', 'uf': 'PI'},
   {'id': 2, 'nome': 'Altos', 'uf': 'PI'},
   {'id': 3, 'nome': 'Coelho Neto', 'uf': 'MA'},
   {'id': 4, 'nome': 'Pedro II', 'uf': 'PI'},
-] #id será o parametro
+] 
+
+
 cidades=[Cidade(id=1,nome='Teresina'),
         Cidade(id=2,nome='Coelho Neto')]
 
